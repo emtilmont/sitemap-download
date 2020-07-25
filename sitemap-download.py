@@ -1,8 +1,11 @@
 import requests
 import os
 
-#https://www.sec.gov/Archives/edgar/full-index/1993/QTR1/sitemap.quarterlyindex1.xml
-baseurl = 'https://www.sec.gov/Archives/edgar/full-index/'
+baseurl = ''
+logfile = os.path.join(os.getcwd(), 'output.txt')
+with open('baseurl.txt', 'r') as file:
+    baseurl = file.read().replace('\n', '').strip()
+
 year = 1993
 qtr = 1
 i = 0

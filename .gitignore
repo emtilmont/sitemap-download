@@ -130,3 +130,5 @@ dmypy.json
 
 # output
 output/
+
+baseurl.txt
